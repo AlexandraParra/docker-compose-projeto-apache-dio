@@ -1,0 +1,195 @@
+/* *{border: solid 1px red;} */
+
+body{
+    padding: 5px 30px;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo details {
+    margin-top: 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.logo summary {
+    cursor: pointer;
+    padding: 2px;
+}
+
+.logo summary::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0 5px 0 black, 0 -5px 0 black;
+    transform: translateY(-50%);
+}
+
+.logo summary::-webkit-details-marker,
+.logo summary::marker {
+    color: white;
+}
+
+.menu{
+    width: 200px;
+    background-color: #fff;
+    position: absolute;
+    padding: 10px;
+    line-height: 1.5;
+    box-shadow: 2px 2px 2px 2px rgb(189, 189, 189);
+}
+
+.menu h3{
+    margin: 0;
+}
+
+.menu a, .account a, .index a, .content a, .features  {
+    color: blue;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 120px;
+    margin-left: 30px;
+}
+
+.search{
+    margin-top: 10px;
+    padding: 4px 0 4px 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(85, 84, 84);
+}
+
+.search input{
+    border: none;
+}
+
+.search button{
+    height: 30px;
+}
+
+.account ul{
+    font-size: 14px;
+}
+
+.account ul, .features ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.account li, .features li{
+    margin-left: 10px;
+}
+
+.features li:first-child{
+    margin-left: 0;
+}
+
+.index ul, .features ul{
+    list-style: none;
+    padding: 0;
+}
+
+.index li{
+    margin-bottom: 10px;
+}
+
+.content, main .title, .features .list , .article{
+    display: flex;
+    flex-direction: row;
+}
+
+.index{
+    width: 15%;
+    margin: 100px 0 0 20px;
+    padding-right: 10px;
+}
+
+main{
+    width: 70%;
+    padding: 10px;
+}
+
+.settings{
+    width: 7%;
+}
+
+.settings p{
+    color: rgb(95, 93, 93);
+}
+
+main .title, .features .list {
+    justify-content: space-between;
+}
+
+.title a{
+    padding-top: 35px;
+}
+
+.article .text{
+    width: 60%;
+    padding-right: 15px;
+}
+
+.article .table{
+    width: 40%;
+    border: solid 1px #9b9898;
+    padding: 5px;
+}
+
+.table h2, .table .titleTable{
+    background-color: rgb(255, 239, 194);
+    display: flex;
+    justify-content: center;
+}
+
+.table img{
+    width: 100%;
+}
+
+.table table{
+    width: 100%;
+}
+
+.table table th, .table table td{
+    text-align: left;
+}
+
+.ptext{
+    line-height: 1.6;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent{
+    width: 70%;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+}
+
+.quote{
+    width: 50%;
+}
